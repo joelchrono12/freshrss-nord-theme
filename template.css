@@ -35,12 +35,12 @@
 /*============*/
 
 @font-face {
-	font-family: var(--mono-font);
+	font-family: var(--mono-font) !important;
 	font-style: normal;
 	font-weight: 400;
-	src: local('Open Sans'), local('OpenSans'),
+/*	src: local('Open Sans'), local('OpenSans'),
 		url('../fonts/OpenSans.woff2') format('woff2'),
-		url('../fonts/OpenSans.woff') format('woff');
+		url('../fonts/OpenSans.woff') format('woff');*/
 }
 
 html, body {
@@ -48,7 +48,7 @@ html, body {
 	padding: 0;
 	background: var(--bg);
 	color: var(--text);
-	font-family: "OpenSans", "Cantarell", "Helvetica", "Arial", sans-serif;
+	font-family: var(--mono-font) !important;
 	font-size: 100%;
 }
 
@@ -214,6 +214,9 @@ input[type="checkbox"] {
 	margin-right: .5em;
 }
 
+button{
+	font-family: var(--mono-font) !important;
+}
 button.as-link,
 button.as-link:hover,
 button.as-link:active {
