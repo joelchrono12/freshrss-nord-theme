@@ -221,6 +221,7 @@ button.as-link,
 button.as-link:hover,
 button.as-link:active {
 	background: transparent;
+	background-color: var(--bg);
 	color: inherit;
 	font-size: 1.1em;
 	border: none;
@@ -1585,6 +1586,7 @@ input:checked + .slide-container .properties {
 	#slider.active {
 		left: 0;
 		top: 50px;
+        background-color(-bg);
 	}
 
 	#close-slider img {
