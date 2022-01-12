@@ -1,7 +1,7 @@
 {
   "name": "Nord theme",
   "author": "joelchrono12",
-  "description": "A dynamic, simple theme based on Nord's color scheme",
+  "description": "A simple theme based on Nord's color scheme",
   "version": 0.1,
-  "files": ["template.css", "base.css"]
+  "files": ["_template.css","nord.css"]
 }

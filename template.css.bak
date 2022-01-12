@@ -74,7 +74,7 @@ sup {
 
 kbd {
 	background-color: #eee;
-	padding: 2px 24px 2px 4px;
+	padding: 2px 4px 2px 24px;
 	display: inline-block;
 	color: #333;
 	border: 1px solid #b4b4b4;
@@ -168,8 +168,8 @@ input[type="checkbox"] {
 }
 
 .dropdown-menu input[type="checkbox"] {
-	margin-right: 1em;
-	margin-left: .5em;
+	margin-left: 1em;
+	margin-right: .5em;
 }
 
 button.as-link,
@@ -180,7 +180,7 @@ button.as-link:active {
 	font-size: 1.1em;
 	border: none;
 	cursor: pointer;
-	text-align: right;
+	text-align: left;
 }
 
 button.as-link[disabled] {
@@ -220,13 +220,13 @@ td.numeric {
 
 .form-group .group-name {
 	display: block;
-	float: right;
+	float: left;
 	width: 200px;
 }
 
 .form-group .group-controls {
 	min-width: 250px;
-	margin: 0 220px 0 0;
+	margin: 0 0 0 220px;
 	overflow-x: auto;
 }
 
@@ -239,7 +239,7 @@ td.numeric {
 	width: 200px;
 	font-size: 1.1em;
 	font-weight: bold;
-	text-align: left;
+	text-align: right;
 	cursor: pointer;
 }
 
@@ -333,7 +333,7 @@ a.btn {
 	border: 1px solid #aaa;
 	min-width: 200px;
 	position: absolute;
-	left: 0;
+	right: 0;
 }
 
 .dropdown-menu-scrollable {
@@ -386,7 +386,7 @@ a.btn {
 	font-size: 0;
 	position: fixed;
 	top: 0; bottom: 0;
-	right: 0; left: 0;
+	left: 0; right: 0;
 	z-index: -11;
 	cursor: default;
 }
@@ -469,7 +469,7 @@ a.btn {
 
 /*=== Boxes */
 .box {
-	margin: 20px 0 20px 20px;
+	margin: 20px 20px 20px 0;
 	display: inline-block;
 	max-width: 95%;
 	width: 20rem;
@@ -493,7 +493,7 @@ a.btn {
 }
 
 .box .box-content {
-	padding: 8px 16px 8px 8px;
+	padding: 8px 8px 8px 16px;
 	display: block;
 	overflow: auto;
 }
@@ -566,7 +566,7 @@ a.btn {
 	margin: 0;
 	max-height: 99vh;
 	list-style: none;
-	text-align: right;
+	text-align: left;
 	overflow-x: hidden;
 }
 
@@ -694,7 +694,7 @@ input[type="search"] {
 }
 
 .aside_feed .tree-folder-items .dropdown-menu {
-	right: 0;
+	left: 0;
 }
 
 .aside_feed .tree-folder-items .item .dropdown-toggle > .icon {
@@ -724,7 +724,7 @@ input[type="search"] {
 
 .day .name {
 	position: absolute;
-	left: 0;
+	right: 0;
 	width: 50%;
 	overflow: hidden;
 	white-space: nowrap;
@@ -807,7 +807,7 @@ input[type="search"] {
 }
 
 .flux .item.thumbnail img {
-	background: repeating-linear-gradient( 45deg, #ddd, #ddd 5px, transparent 5px, transparent 10px );
+	background: repeating-linear-gradient( -45deg, #ddd, #ddd 5px, transparent 5px, transparent 10px );
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -827,7 +827,7 @@ input[type="search"] {
 }
 
 .flux .item.title .author {
-	padding-right: 1rem;
+	padding-left: 1rem;
 	color: #555;
 	font-size: .9rem;
 	font-weight: normal;
@@ -835,7 +835,7 @@ input[type="search"] {
 
 .flux .item.date {
 	width: 155px;
-	text-align: left;
+	text-align: right;
 	overflow: hidden;
 }
 
@@ -881,8 +881,8 @@ input[type="search"] {
 .content ul,
 .content ol,
 .content dd {
-	margin: 0 15px 0 0;
-	padding: 0 15px 5px 0;
+	margin: 0 0 0 15px;
+	padding: 0 0 5px 15px;
 }
 
 .content pre {
@@ -905,7 +905,7 @@ br {
 .notification {
 	position: absolute;
 	top: 1em;
-	right: 25%; left: 25%;
+	left: 25%; right: 25%;
 	z-index: 10;
 	background: #fff;
 	border: 1px solid #aaa;
@@ -922,7 +922,7 @@ br {
 .notification a.close {
 	position: absolute;
 	top: 0; bottom: 0;
-	left: 0;
+	right: 0;
 	display: inline-block;
 }
 
@@ -944,7 +944,7 @@ br {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	right: 0;
+	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
@@ -961,7 +961,7 @@ br {
 	overflow: hidden;
 	background-color: #fafafa;
 	border-radius: .25rem;
-	box-shadow: 0 0 1px #737373, -1px 2px 3px #4a4a4f;
+	box-shadow: 0 0 1px #737373, 1px 2px 3px #4a4a4f;
 }
 
 .popup-row {
@@ -970,7 +970,7 @@ br {
 }
 
 #popup-close {
-	float: left;
+	float: right;
 	width: 27px;
 	height: 27px;
 	padding-bottom: 5px;
@@ -1011,7 +1011,7 @@ br {
 	background: #fff;
 	display: table;
 	position: fixed;
-	bottom: 0; right: 0;
+	bottom: 0; left: 0;
 	width: 300px;
 	table-layout: fixed;
 }
@@ -1084,11 +1084,11 @@ br {
 }
 
 .formLogin .header > .item.title {
-	text-align: right;
+	text-align: left;
 }
 
 .formLogin .header > .item.configure {
-	text-align: left;
+	text-align: right;
 }
 
 
@@ -1099,7 +1099,7 @@ br {
 }
 
 #stream.global .box {
-	text-align: right;
+	text-align: left;
 }
 
 #global > #panel {
@@ -1117,7 +1117,7 @@ br {
 #overlay {
 	position: fixed;
 	top: 0; bottom: 0;
-	right: 0; left: 0;
+	left: 0; right: 0;
 	background: rgba(0, 0, 0, 0.5);
 	opacity: 0;
 	transition: visibility .3s, opacity .3s;
@@ -1134,14 +1134,14 @@ br {
 	display: none;
 	position: fixed;
 	top: 2%; bottom: 2%;
-	right: 3%; left: 3%;
+	left: 3%; right: 3%;
 	overflow: auto;
 }
 
 #overlay .close {
 	position: fixed;
 	top: 0; bottom: 0;
-	right: 0; left: 0;
+	left: 0; right: 0;
 	display: block;
 }
 
@@ -1153,26 +1153,26 @@ br {
 #slider {
 	position: fixed;
 	top: 0; bottom: 0;
-	right: 100%; left: 0;
+	left: 100%; right: 0;
 	overflow: auto;
 	background: #fff;
-	border-right: 1px solid #aaa;
-	transition: right 200ms linear;
+	border-left: 1px solid #aaa;
+	transition: left 200ms linear;
 }
 
 #slider.active {
-	right: 40%;
+	left: 40%;
 }
 
 #close-slider {
 	position: fixed;
 	top: 0; bottom: 0;
-	right: 100%; left: 0;
+	left: 100%; right: 0;
 	cursor: pointer;
 }
 
 #close-slider.active {
-	right: 0;
+	left: 0;
 }
 
 #close-slider img {
@@ -1242,13 +1242,13 @@ br {
 	color: #000;
 	border-top: 1px solid #aaa;
 	bottom: 0;
-	right: 0; left: 0;
+	left: 0; right: 0;
 	position: absolute;
 	z-index: 10;
 }
 
 .properties .page-number {
-	left: 5px;
+	right: 5px;
 	top: 0;
 	position: absolute;
 }
@@ -1262,7 +1262,7 @@ br {
 }
 
 .nav .next {
-	left: 0;
+	right: 0;
 }
 
 input:checked + .slide-container .slide {
@@ -1321,7 +1321,7 @@ input:checked + .slide-container .properties {
 
 .enclosure [download] {
 	font-size: xx-large;
-	margin-right: .8em;
+	margin-left: .8em;
 }
 
 .enclosure-description {
@@ -1391,7 +1391,7 @@ input:checked + .slide-container .properties {
 	}
 
 	.form-group .group-controls {
-		margin-right: 0;
+		margin-left: 0;
 	}
 
 	.dropdown .dropdown-menu {
@@ -1405,7 +1405,7 @@ input:checked + .slide-container .properties {
 		width: 90%;
 		height: 100vh;
 		overflow: auto;
-		box-shadow: 3px 0 3px #aaa;
+		box-shadow: -3px 0 3px #aaa;
 	}
 
 	.dropdown-target ~ .dropdown-menu {
@@ -1442,8 +1442,8 @@ input:checked + .slide-container .properties {
 		position: fixed;
 		top: 0;
 		bottom: 0;
-		right: 0;
 		left: 0;
+		right: 0;
 		cursor: pointer;
 		z-index: 99;
 	}
@@ -1455,7 +1455,7 @@ input:checked + .slide-container .properties {
 	.aside {
 		position: fixed;
 		top: 0; bottom: 0;
-		right: 0;
+		left: 0;
 		width: 0;
 		overflow: hidden;
 		z-index: 100;
@@ -1483,8 +1483,8 @@ input:checked + .slide-container .properties {
 
 	.notification {
 		top: 0;
-		right: 0;
 		left: 0;
+		right: 0;
 	}
 
 	#nav_entries {
@@ -1493,19 +1493,19 @@ input:checked + .slide-container .properties {
 
 	#panel {
 		top: 25px; bottom: 30px;
-		right: 0; left: 0;
+		left: 0; right: 0;
 	}
 
 	#panel .close {
-		top: 0; left: 0;
-		right: auto; bottom: auto;
+		top: 0; right: 0;
+		left: auto; bottom: auto;
 		display: inline-block;
 		width: 30px;
 		height: 30px;
 	}
 
 	#slider.active {
-		right: 0;
+		left: 0;
 		top: 50px;
 	}
 
@@ -1570,8 +1570,8 @@ input:checked + .slide-container .properties {
 /*=== PREVIEW */
 /*===========*/
 .preview_controls {
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
 	padding: 1rem;
 	max-width: 1000px;
 	text-align: center;
@@ -1589,7 +1589,7 @@ input:checked + .slide-container .properties {
 }
 
 .preview_controls label + label {
-	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 .preview_background {

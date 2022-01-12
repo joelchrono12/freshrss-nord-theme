@@ -6,7 +6,7 @@
 /*============*/
 html, body {
 	height: 100%;
-/*	font-family: "OpenSans", "Cantarell", "Helvetica", "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;*/
+	font-family: "OpenSans", "Cantarell", "Helvetica", "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 /*=== Links */
@@ -65,9 +65,6 @@ tr, th, td {
 	padding: 0.5em;
 }
 
-th {
-}
-
 form td,
 form th {
 	font-weight: normal;
@@ -101,38 +98,6 @@ form th {
 	font-size: 0;
 }
 
-.stick input,
-.stick .btn {
-}
-
-.stick .btn:first-child,
-.stick input:first-child {
-}
-
-.stick .btn-important:first-child {
-}
-
-.stick .btn:last-child,
-.stick input:last-child {
-}
-
-.stick .btn + .btn,
-.stick .btn + input,
-.stick .btn + .dropdown > .btn,
-.stick input + .btn,
-.stick input + input,
-.stick input + .dropdown > .btn,
-.stick .dropdown + .btn,
-.stick .dropdown + input,
-.stick .dropdown + .dropdown > .btn {
-}
-
-.stick input + .btn {
-}
-
-.stick .btn + .dropdown > .btn {
-}
-
 .btn {
 	margin: 0;
 	padding: 5px 10px;
@@ -154,28 +119,8 @@ a.btn {
 	text-decoration: none;
 }
 
-.btn.active,
-.btn:active,
-.dropdown-target:target ~ .btn.dropdown-toggle {
-}
-
 .btn-important {
 	font-weight: normal;
-}
-
-.btn-important:hover {
-}
-
-.btn-important:active {
-}
-
-.btn-attention {
-}
-
-.btn-attention:hover {
-}
-
-.btn-attention:active {
 }
 
 /*=== Navigation */
@@ -186,17 +131,6 @@ a.btn {
 	font-size: 0.9rem;
 }
 
-.nav-list .item:hover {
-}
-
-.nav-list .item:hover a {
-}
-
-.nav-list .item.active {
-}
-
-.nav-list .item.active a {
-}
 
 .nav-list .disable {
 	text-align: center;
@@ -209,19 +143,6 @@ a.btn {
 .nav-list a:hover {
 	text-decoration: none;
 }
-
-.nav-list .item.empty a {
-}
-
-.nav-list .item.active.empty a {
-}
-
-.nav-list .item.error a {
-}
-
-.nav-list .item.active.error a {
-}
-
 .nav-list .nav-header {
 	padding: 0 10px;
 	font-weight: bold;
@@ -278,17 +199,11 @@ a.btn {
 	text-align: left;
 }
 
-.dropdown-menu > .item {
-}
-
 .dropdown-menu > .item > a,
 .dropdown-menu > .item > span,
 .dropdown-menu > .item > .as-link {
 	padding: 0 22px;
 	line-height: 2.5em;
-}
-
-.dropdown-menu > .item:hover {
 }
 
 .dropdown-menu > .item[aria-checked="true"] > a::before {
@@ -325,15 +240,6 @@ a.btn {
 	text-decoration: underline;
 }
 
-.alert-warn {
-}
-
-.alert-success {
-}
-
-.alert-error {
-}
-
 /*=== Pagination */
 .pagination {
 	text-align: center;
@@ -355,15 +261,6 @@ a.btn {
 	font-style: italic;
 	line-height: 3em;
 	text-decoration: none;
-}
-
-.pagination .item a:hover {
-}
-
-.pagination:first-child .item {
-}
-
-.pagination:last-child .item {
 }
 
 .pagination .loading,
@@ -414,26 +311,14 @@ a.btn {
 	font-weight: bold;
 }
 
-.tree-folder.active .tree-folder-title .title {
-}
-
-.tree-folder-items {
-}
-
 .tree-folder-items > .item {
 	padding: 0 10px;
 	line-height: 2.5rem;
 	font-size: 0.8rem;
 }
 
-.tree-folder-items > .item.active {
-}
-
 .tree-folder-items > .item > a {
 	text-decoration: none;
-}
-
-.tree-folder-items > .item.active > a {
 }
 
 /*=== STRUCTURE */
@@ -474,9 +359,6 @@ a.btn {
 	height: calc(100% - 85px);
 }
 
-.aside {
-}
-
 .aside.aside_feed {
 	padding: 10px 0;
 	text-align: center;
@@ -497,19 +379,6 @@ a.btn {
 }
 
 /*=== Aside main page (feeds) */
-.feed.item.empty.active {
-}
-
-.feed.item.error.active {
-}
-
-.feed.item.empty,
-.feed.item.empty > a {
-}
-
-.feed.item.error,
-.feed.item.error > a {
-}
 
 .feed.item.empty.active,
 .feed.item.error.active,
@@ -570,9 +439,6 @@ a.btn {
 	font-size: 0.9em;
 }
 
-#new-article:hover {
-}
-
 #new-article > a {
 	line-height: 3em;
 	font-weight: bold;
@@ -587,9 +453,6 @@ a.btn {
 	padding: 0 10px;
 	font-weight: bold;
 	line-height: 3em;
-}
-
-#new-article + .day {
 }
 
 .day .name {
@@ -607,26 +470,6 @@ a.btn {
 }
 
 /*=== Feed articles */
-.flux {
-}
-
-.flux:hover {
-}
-
-.flux.current {
-}
-
-.flux.not_read {
-}
-
-.flux.not_read:not(.current):hover .item.title {
-}
-
-.flux.favorite {
-}
-
-.flux.favorite:not(.current):hover .item.title {
-}
 
 .flux_header {
 	font-size: 0.8rem;
@@ -677,9 +520,6 @@ a.btn {
 	padding: 2px 5px;
 }
 
-.content pre code {
-}
-
 .content blockquote {
 	margin: 0;
 	padding: 5px 20px;
@@ -701,11 +541,6 @@ a.btn {
 	vertical-align: middle;
 }
 
-.notification.good {
-}
-
-.notification.bad {
-}
 
 .notification a.close {
 	padding: 0 15px;
