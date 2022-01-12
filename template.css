@@ -764,6 +764,11 @@ input[type="search"] {
 	font-weight: bold;
 }
 
+li.item.active{
+	background-color: var(--bg);
+	font-weight: bold;
+}
+
 .aside_feed .tree-folder-items:not(.active) {
 	margin: 0;
 	padding: 0;
@@ -1602,7 +1607,7 @@ input:checked + .slide-container .properties {
 	}
 
 	#close-slider.active {
-		background: #f6f6f6;
+		background: var(--bg);
 		display: block;
 		width: 100%;
 		height: 50px;
