@@ -6,7 +6,7 @@ You can see how it looks here. It features a compact layout and some custom icon
 ![Example](./thumbs/original.png)
 
 # WIP
-- Complete icon set, some are still missing
+- Complete icon set, some are still using default colors
 - Better mobile UI, some stuff looks janky
 - Other fixes for small problems
 
