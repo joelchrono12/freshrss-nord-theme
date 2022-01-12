@@ -2,7 +2,7 @@
 :root {
     /* Set sans-serif & mono fonts */
     --sans-font: "IBM Plex Sans","Roboto",-apple-system,BlinkMacSystemFont,"Nimbus Sans L",Avenir,"Noto Sans", "Segoe UI",Arial,Helvetica,"Helvetica Neue",sans-serif;
-    --mono-font: "Mononoki Nerd Font","IBM Plex Mono","Roboto Mono","Ubuntu Mono","Fira Code","Overpass Mono", Monaco,"Droid Sans Mono",monospace;
+    --mono-font: "mononoki Nerd Font","IBM Plex Mono","Roboto Mono","Ubuntu Mono","Fira Code","Overpass Mono", Monaco,"Droid Sans Mono",monospace;
     /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
     --base-fontsize: 1rem;
     /* Major third scale progression - see https://type-scale.com/ */
@@ -35,7 +35,7 @@
 /*============*/
 
 @font-face {
-	font-family: 'OpenSans';
+	font-family: var(--mono-font);
 	font-style: normal;
 	font-weight: 400;
 	src: local('Open Sans'), local('OpenSans'),
