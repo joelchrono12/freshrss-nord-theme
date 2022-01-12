@@ -4,15 +4,6 @@
     --sans-font: "IBM Plex Sans","Roboto",-apple-system,BlinkMacSystemFont,"Nimbus Sans L",Avenir,"Noto Sans", "Segoe UI",Arial,Helvetica,"Helvetica Neue",sans-serif;
     --mono-font: "mononoki Nerd Font","IBM Plex Mono","Roboto Mono","Ubuntu Mono","Fira Code","Overpass Mono", Monaco,"Droid Sans Mono",monospace;
     /*This is my dark themed color scheme*/
-/*    --bg: #FFFFFF;
-    --accent-bg: #F2F4F8;
-    --text: #4c566a;
-    --text-light: #4c566a;
-    --border: #3b4252;
-    --accent: #5e81ac;
-    --accent-light: #5e81ac;
-    --code: #2e3440;
-    --code-bg: #e5e9f0;*/
     --bg: #242933;
     --accent-bg: #3b4252;
     --text: #eceff4;
@@ -37,12 +28,9 @@
 }
 
 html, body {
-	margin: 0;
-	padding: 0;
 	background: var(--bg);
 	color: var(--text);
 	font-family: var(--mono-font) !important;
-	font-size: 100%;
 }
 
 /*=== Links */
@@ -305,10 +293,6 @@ td.numeric {
 	flex-shrink: 1;
 }
 
-.stick > .btn {
-	flex-shrink: 0;
-}
-
 .btn,
 a.btn {
 	display: inline-block;
@@ -316,11 +300,24 @@ a.btn {
 	overflow: hidden;
 	border: none;
 	border-radius: 5px;
-	background: var(--accent-bg);
 	color: var(--accent);
 	text-decoration: none;
 	margin: .3rem .3rem !important;
 	transition: .4s;
+	background: var(--accent-bg);
+}
+
+.btn {
+	padding: 5px 10px;
+	min-height: 37px;
+	min-width: 15px;
+	font-size: 0.9rem;
+	vertical-align: middle;
+}
+
+a.btn {
+	min-height: 25px;
+	line-height: 25px;
 }
 
 .btn-important, .read_all, #actualize {
@@ -718,9 +715,6 @@ input[type="search"] {
 }
 
 .aside {
-	display: table-cell;
-	width: 300px;
-	vertical-align: top;
 	background-color: var(--accent-bg);
 	border-radius: 12px;
 }
@@ -834,11 +828,6 @@ li.item.active{
 	width: 200px;
 }
 
-.flux.not_read .item.title,
-.flux.current .item.title {
-	font-weight: bold;
-}
-
 .flux:not(.current):hover .item.title {
 	background: var(--accent-bg);
 	max-width: calc(100% - 320px);
@@ -851,7 +840,6 @@ li.item.active{
 
 .flux .item.title a {
 	color: var(--border);
-	text-decoration: none;
 }
 
 .flux .item.thumbnail {
@@ -919,21 +907,6 @@ li.item.active{
 	width: 155px;
 	text-align: right;
 	overflow: hidden;
-}
-
-.flux .item > a {
-	display: block;
-	text-decoration: none;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-
-.flux .item.share > a,
-.item.query > a {
-	display: list-item;
-	list-style-position: inside;
-	list-style-type: decimal;
 }
 
 /*=== Feed article content */
@@ -1706,6 +1679,10 @@ input:checked + .slide-container .properties {
  }
 /* stylelint-disable block-no-empty  */
 
+
+
+
+
 /*BEGINS BASE.CSS*/
 
 /*=== GENERAL */
@@ -1800,30 +1777,6 @@ form th {
 	font-size: 0;
 }
 
-.btn {
-	margin: 0;
-	padding: 5px 10px;
-	display: inline-block;
-	min-height: 37px;
-	min-width: 15px;
-	font-size: 0.9rem;
-	vertical-align: middle;
-	cursor: pointer;
-	overflow: hidden;
-}
-
-a.btn {
-	min-height: 25px;
-	line-height: 25px;
-}
-
-.btn:hover {
-	text-decoration: none;
-}
-
-.btn-important {
-	font-weight: normal;
-}
 
 /*=== Navigation */
 .nav-list .nav-header,
@@ -2385,18 +2338,6 @@ a.btn {
 .log .date {
 	display: block;
 	font-weight: bold;
-}
-
-.log.error {
-}
-
-.log.warning {
-}
-
-.log.notice {
-}
-
-.log.debug {
 }
 
 /*=== MOBILE */
