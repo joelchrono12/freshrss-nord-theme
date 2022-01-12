@@ -756,6 +756,14 @@ input[type="search"] {
 	padding: 0px 15px;
 }
 
+.aside_feed .tree-folder-items.active {
+	background-color: var(--bg);
+}
+.item.feed.active {
+	background-color: var(--accent-bg);
+	font-weight: bold;
+}
+
 .aside_feed .tree-folder-items:not(.active) {
 	margin: 0;
 	padding: 0;
