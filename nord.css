@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
     /* Set sans-serif & mono fonts */
-    --sans-font: "IBM Plex Sans","Roboto",-apple-system,BlinkMacSystemFont,"Nimbus Sans L",Avenir,"Noto Sans", "Segoe UI",Arial,Helvetica,"Helvetica Neue",sans-serif;
+    --sans-font: Lato,Helvetica,"IBM Plex Sans","Roboto",-apple-system,BlinkMacSystemFont,"Nimbus Sans L",Avenir,"Noto Sans", "Segoe UI",Arial,Helvetica,"Helvetica Neue",sans-serif;
     --mono-font: "mononoki Nerd Font","IBM Plex Mono","Roboto Mono","Ubuntu Mono","Fira Code","Overpass Mono", Monaco,"Droid Sans Mono",monospace;
     /*This is my dark themed color scheme*/
     --bg: #242933;
@@ -30,7 +30,7 @@
 html, body {
 	background: var(--bg);
 	color: var(--text);
-	font-family: var(--mono-font) !important;
+	font-family: var(--sans-font) !important;
 }
 
 /*=== Links */
@@ -196,7 +196,7 @@ input[type="checkbox"] {
 }
 
 button{
-	font-family: var(--mono-font) !important;
+	font-family: var(--sans-font) !important;
 }
 button.as-link,
 button.as-link:hover,
@@ -645,6 +645,9 @@ a.btn {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+ .tree-folder.category {
+    border-bottom: 1px solid var(--bg);
+ }
 
 .tree-folder-items > .item {
 	display: block;
@@ -2412,3 +2415,25 @@ form th {
 		display: none;
 	}
 }
+
+/* Default table styles for this demo */
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+table tr {
+    border-bottom: 1px solid
+}
+table th, table td {
+    padding: 10px 20px;
+}
+table td span {
+    color: dimgrey;
+    /*display: none;*/
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+    /*position: absolute;*/
+}
+
