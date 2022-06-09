@@ -34,7 +34,6 @@ html, body {
 
 /*=== Links */
 a {
-	background: none !important;
 	color: var(--accent);
 }
 
@@ -186,10 +185,6 @@ a.btn {
 
 #btn-add.btn-important .icon, #actualize .icon {
 	filter: brightness(0);
-}
-
-svg {
-	fill: var(--text) !important;
 }
 
 .btn:hover, svg:hover {
