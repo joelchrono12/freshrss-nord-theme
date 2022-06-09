@@ -62,16 +62,12 @@ label {
 	cursor: pointer;
 }
 
-input {
-	background: var(--bg);
-	color: var(--text);
-	border-color: var(--border);
-}
-
 input, select, textarea {
 	padding: 5px;
+	margin: 5px;
 	color: var(--text);
-	border: none;
+	border: 1px solid var(--border);
+	border-color: var(--border);
 	border-radius: 6px;
 	background-color: var(--bg);
 	min-height: 25px;
@@ -164,6 +160,11 @@ a.btn {
 	transition: .4s;
 }
 
+a.btn.active {
+	background-color: var(--accent-bg) !important;
+	border: 1px solid var(--border);
+}
+
 .btn {
 	padding: 5px 10px;
 	min-height: 37px;
@@ -181,6 +182,14 @@ a.btn {
 	font-weight: bold !important;
 	background-color: var(--accent) !important;
 	color: var(--bg) !important;
+}
+
+#btn-add.btn-important .icon, #actualize .icon {
+	filter: brightness(0);
+}
+
+svg {
+	fill: var(--text) !important;
 }
 
 .btn:hover, svg:hover {
@@ -283,11 +292,9 @@ a.btn {
 }
 
 .dropdown-target:target ~ .dropdown-toggle::after {
-    background-color: var(--accent-bg);
+	background-color: var(--accent-bg);
 	border-top: 1px solid var(--border);
 	border-left: 1px solid var(--border);
-/*	z-index: -10;*/
-
 }
 
 .dropdown-menu-scrollable .dropdown-close {
@@ -312,6 +319,11 @@ a.btn {
 
 .alert > a {
 	text-decoration: underline;
+}
+
+/*=== Icons */
+.icon {
+	/*filter: invert(74%) sepia(29%) saturate(411%) hue-rotate(171deg) brightness(130%) contrast(85%);*/
 }
 
 /*=== Pagination */
@@ -433,6 +445,10 @@ a.btn {
 
 .header .item.search input:focus {
 	width: 350px;
+}
+
+.header > .item.title .logo {
+	filter: grayscale(100%) brightness(2.5);
 }
 
 /*=== Body */
