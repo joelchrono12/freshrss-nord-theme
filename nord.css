@@ -626,6 +626,7 @@ li.item.active {
 	padding: 10px 20px;
 	overflow: auto;
 	font-size: 0.9rem;
+	line-height: 1.2rem;
 }
 
 .content code {
