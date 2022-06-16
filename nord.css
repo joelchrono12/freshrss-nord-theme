@@ -62,12 +62,12 @@ label {
 }
 
 input, select, textarea {
-	padding: 5px;
 	margin: 5px;
+	padding: 5px;
 	color: var(--text);
 	border: 1px solid var(--border);
-	border-color: var(--border);
 	border-radius: 6px;
+	border-color: var(--border);
 	background-color: var(--bg);
 	min-height: 25px;
 	line-height: 25px;
@@ -254,7 +254,6 @@ a.btn {
 
 .dropdown-menu > .item:hover > a {
 	text-decoration: none;
-	background-color: var(--bg);
 }
 
 .dropdown-close {
@@ -321,9 +320,9 @@ a.btn {
 	/*filter: invert(74%) sepia(29%) saturate(411%) hue-rotate(171deg) brightness(130%) contrast(85%);*/
 }
 
-img.favicon{
-	border-radius: 4px;
+img.favicon {
 	background: var(--text-light);
+	border-radius: 4px;
 }
 
 /*=== Pagination */
@@ -626,7 +625,6 @@ li.item.active {
 	padding: 10px 20px;
 	overflow: auto;
 	font-size: 0.9rem;
-	line-height: 1.2rem;
 }
 
 .content code {
