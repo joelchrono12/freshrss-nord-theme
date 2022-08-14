@@ -32,6 +32,7 @@ html, body {
 	background: var(--bg);
 	color: var(--text);
 	font-family: var(--sans-font);
+	height: 100%;
 }
 
 /*=== Links */
@@ -617,6 +618,7 @@ li.item.active {
 .flux:not(.current):hover .item.title {
 	background: var(--accent-bg);
 	transition: .4s;
+	position: relative;
 }
 
 .flux .item.title a {
